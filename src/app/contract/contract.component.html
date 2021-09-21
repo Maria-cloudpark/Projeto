@@ -1,0 +1,16 @@
+<div class="container_table">
+    <h4 class="title">Contratos</h4>
+    <table class="table_header">
+        <thead>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Tipo de veículo</th>
+        </thead>
+        <tbody *ngFor="let contract of Contract_results" >
+            <td>{{contract.name}}</td>
+            <td>{{contract.kind_desc}}</td>
+            <td>{{contract.vehicle_kind_desc}}</td>
+        </tbody>
+    </table>
+    <h4 class="title2">0</h4>
+</div>

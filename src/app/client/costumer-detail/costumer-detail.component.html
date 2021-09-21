@@ -1,0 +1,31 @@
+<div class="container">
+
+</div>
+
+<div class="container_table">
+    <table class="table_header">
+        <thead class="table_thead">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Placa</th>
+            <th>CPF</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>CNH</th>
+            <th>Plano</th>
+        </thead>
+        <tbody *ngFor="let detail of detail;">
+            <td>{{detail.id}}</td>
+            <td>{{detail.name}}</td>
+            <td>{{detail.vehicle_set.plate}}</td>
+            <td>{{detail.cpf}}</td>
+            <td>{{detail.phone}}</td>
+            <td>{{detail.email}}</td>
+            <td>{{detail.cnh_number}}</td>
+            <td>{{detail.plan_name}}</td>
+        </tbody>
+    </table>
+</div>
+<router-outlet>
+    
+</router-outlet>

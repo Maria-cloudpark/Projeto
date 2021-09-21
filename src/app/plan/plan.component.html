@@ -1,0 +1,17 @@
+<div class="container_table">
+    <h4 class="title">Planos</h4>
+    <table class="table_header">
+        <thead>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+        </thead>
+        <tbody *ngFor="let plan of Plan_results" >
+            <td>{{plan.id}}</td>
+            <td>{{plan.name}}</td>
+            <td>{{plan.kind_desc}}</td>
+        </tbody>
+    </table>
+    <h4 class="title2">0</h4>
+</div>
+

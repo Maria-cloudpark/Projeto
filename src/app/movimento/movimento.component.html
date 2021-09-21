@@ -1,0 +1,26 @@
+<div class="container_table">
+  <h4 class="title">Veículos no Pátio</h4> 
+  <table class="table_header">
+    <thead class="table_thead">
+      <tr class="table_tr">
+        <th>Id</th>
+        <th>Ticket</th>
+        <th>Data de entrada</th>
+        <th>Placa</th>
+        <th>Veiculo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movimento of Movimento; let i = index; ">
+        <td>{{movimento.id}}</td>
+        <td>{{movimento.ticket_id}}</td>
+        <td>{{movimento.entry_date}}</td>
+        <td>{{movimento.plate}}</td>
+        <td>{{movimento.vehicle}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <h4 class="title2">0</h4>
+</div>
+  

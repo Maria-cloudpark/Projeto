@@ -1,0 +1,23 @@
+
+<div class="container_table">
+    <h4 class="title">Clientes</h4>
+    <table class="table_header">
+        <thead class="table_thead">
+            <th>Id</th>
+            <th>Clente</th>
+            <th>Plano</th>
+            <th>Vencimento</th>
+        </thead>
+        <tbody *ngFor="let client of Client_results;">
+            <td>
+                <a routerLink="../costumer-detail/{{client.id}}">{{client.id}}</a>
+            </td>
+            <td>{{client.name}}</td>
+            <td>{{client.plan_name}}</td>
+            <td>{{client.due_date}}</td>
+        </tbody>
+    </table>
+</div>
+<router-outlet>
+    
+</router-outlet>

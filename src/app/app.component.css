@@ -1,0 +1,115 @@
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+*{
+  margin: 0;
+  border: 0;
+}
+
+li, a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #aabfd1;
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(37, 57, 75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.nav_links li a {
+  padding: 10%;
+  transition: all 0.4s ease 0%;
+}
+
+.nav_links li a:hover{
+  color: #d2d5d8;
+}
+
+button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #0d263d;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: #03182b;
+}
+
+.title{
+  font-size: 20px;
+  padding: 10px;
+  background-color: #0d263d;
+  color: white;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  border-start-end-radius: 20px;
+  border-start-start-radius: 20px;
+}
+
+.title2{
+  font-size: 20px;
+  padding: 10px;
+  background-color: #0d263d;
+  color: #0d263d;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  border-end-end-radius: 20px;
+  border-end-start-radius: 20px;
+}
+
+.input_{
+  border: none;
+  padding: 1%;
+  margin: 1%;
+  width: 500px;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+}
+
+input{
+  background-color: #0d263d;
+}
+
+
+.container_table{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 10%;
+}
+
+
+.table_header, th , td {
+  width: 500px;
+  margin-left: -250px;
+  border-bottom: 1px solid #0d263d;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
